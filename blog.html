@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>가양 유흥 가격비교 블로그 | 리얼한 밤문화의 기준</title>
+    <meta name="description" content="가양 유흥 가격비교, 형식적인 리뷰는 가라. 진짜 가격, 진짜 후기, 진짜 만족도. 가양에서 가장 솔직한 유흥 정보를 지금 확인하세요. 010-6279-0862">
+    <meta name="keywords" content="가양 유흥, 가양 유흥 가격비교, 가양 밤문화, 가양 업소, 가양 술집, 가양 가라오케, 가양 룸싸롱, 가양 유흥주점">
+    <link rel="canonical" href="https://kr-pbn-sr-012.vercel.app">
+    <meta property="og:title" content="가양 유흥 가격비교 블로그 | 리얼한 밤문화의 기준">
+    <meta property="og:description" content="가양 유흥 가격비교, 형식적인 리뷰는 가라. 진짜 가격, 진짜 후기, 진짜 만족도.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            background: #0d0d0d;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #ff4500;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff4500;
+            text-shadow: 2px 2px 0 #000;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            border-color: #ff4500;
+            color: #ff4500;
+            background: #2a2a2a;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 30px;
+            height: 4px;
+            background: #ff4500;
+            border-radius: 2px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid #ff4500;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M10 10 L90 10 L90 90 L10 90 Z" fill="none" stroke="%23ff4500" stroke-width="2" opacity="0.1"/><line x1="10" y1="50" x2="90" y2="50" stroke="%23ff4500" stroke-width="1" opacity="0.1"/><line x1="50" y1="10" x2="50" y2="90" stroke="%23ff4500" stroke-width="1" opacity="0.1"/></svg>');
+            background-size: 80px 80px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-content h2 {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ff4500;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 0 #000;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: #ff4500;
+            color: #0d0d0d;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 3px solid #ff4500;
+            transition: all 0.2s;
+            letter-spacing: 2px;
+        }
+        .hero-cta:hover {
+            background: transparent;
+            color: #ff4500;
+        }
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        .blog-post {
+            background: #2a2a2a;
+            padding: 40px;
+            border: 3px solid #ff4500;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .blog-post::before {
+            content: 'HOT';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            background: #ff4500;
+            color: #0d0d0d;
+            padding: 5px 15px;
+            font-weight: 900;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 2px solid #0d0d0d;
+        }
+        .blog-post h3 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ff4500;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 10px;
+        }
+        .blog-post .meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .blog-post .meta span {
+            color: #ff4500;
+            font-weight: 700;
+        }
+        .blog-post p {
+            font-size: 1.1rem;
+            color: #c0c0c0;
+            margin-bottom: 20px;
+        }
+        .blog-post blockquote {
+            border-left: 4px solid #ff4500;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #e0e0e0;
+            background: #1a1a1a;
+            padding: 15px 20px;
+        }
+        .blog-post .highlight-box {
+            background: #0d0d0d;
+            border: 2px dashed #ff4500;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .blog-post .highlight-box a {
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+            border: 2px solid #ff4500;
+            transition: all 0.2s;
+        }
+        .blog-post .highlight-box a:hover {
+            background: #ff4500;
+            color: #0d0d0d;
+        }
+        .blog-post ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .blog-post ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            font-size: 1rem;
+            color: #b0b0b0;
+        }
+        .blog-post ul li::before {
+            content: '>> ';
+            color: #ff4500;
+            font-weight: 900;
+        }
+        .footer {
+            background: #0d0d0d;
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 4px solid #ff4500;
+        }
+        .footer p {
+            color: #888;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+            header h1 {
+                font-size: 1.2rem;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #0d0d0d;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                border-bottom: 4px solid #ff4500;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero {
+                padding: 40px 20px;
+            }
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            .content-section {
+                padding: 30px 20px;
+            }
+            .blog-post {
+                padding: 20px;
+            }
+            .blog-post h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>가양 유흥 가격비교</h1>
+        <nav class="nav-links" id="navLinks">
+            <a href="/">홈</a>
+            <a href="/price">가격</a>
+            <a href="/review">리뷰</a>
+            <a href="/blog">블로그</a>
+            <a href="tel:01062790862">📞 전화문의</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>진짜 가양을 말한다</h2>
+            <p>형식적인 리뷰는 집어쳐. 여기는 진짜다. 가격, 후기, 만족도 — 모든 걸 까발린다.</p>
+            <a href="tel:01062790862" class="hero-cta">지금 전화로 확인</a>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <article class="blog-post">
+            <h3>가양 유흥 가격비교: 왜 너는 호구 당하고 있는가?</h3>
+            <div class="meta">2025년 3월 15일 | <span>가양 유흥 가격비교</span> | by 운영진</div>
+            <p>야, 너. 가양에서 술 한 잔 하려고 돌아다니는데 왜 항상 비싼 데만 걸리냐? 생각해봐. 네가 들어가는 그 업소, 진짜 가격을 말해주는 곳이 몇 개나 되냐? 대부분은 거짓말이야. 메뉴판에는 10만 원인데, 나중에 계산서 보면 30만 원. 이런 개같은 상황, 나도 수없이 겪었다.</p>
+            <p>가양 유흥 가격비교, 이게 왜 중요하냐? 간단하다. 너는 돈을 벌기 위해 일하고, 그 돈을 쓰기 위해 논다. 근데 그 돈을 제대로 못 쓰면? 그냥 호구 인증하는 거야. 가양에는 술집, 가라오케, 룸싸롱, 업소 — 다 있다. 근데 가격은 천차만별이다. 어떤 곳은 20만 원에 2시간, 어떤 곳은 15만 원에 3시간. 똑같은 서비스인데 왜 다르냐? 답은 간단하다. 정보를 모르니까.</p>
+            <blockquote>"가양에서 진짜 가격을 아는 놈은 절대 비싼 데 안 간다. 모르는 놈만 호구가 된다."</blockquote>
+            <p>내가 오늘 까발릴 것은 가양 유흥 가격비교의 진실이다. 첫째, 가라오케. 가양에 있는 가라오케 10곳 중 7곳은 기본 2시간에 15만 원에서 25만 원 사이. 근데 거기서 추가로 주류비, 팁, 서비스료 — 이거 다 합치면 30만 원 훌쩍 넘는다. 둘째, 룸싸롱. 기본 30만 원에서 시작해서 50만 원까지. 셋째, 유흥주점. 20만 원에서 40만 원. 근데 왜 이런 차이가 나냐? 위치, 인테리어, 마담의 말빨 — 다 가격에 들어간다.</p>
+            <p>근데 진짜 문제는 여기서 끝이 아니다. 너는 가격만 보고 가면 안 된다. 후기, 만족도, 서비스 — 이 모든 걸 종합해야 진짜 가치를 알 수 있다. 예를 들어, 어떤 업소는 가격은 싼데 서비스가 개판이다. 웨이터는 시비 걸고, 안주는 맛없고, 분위기는 싸하다. 그럼 싼 게 비지떡이다. 반대로, 비싼 업소가 항상 좋은 건 아니다. 가격만 비싸고 서비스는 평범한 곳도 수두룩하다.</p>
+            <div class="highlight-box">
+                <p>📞 진짜 가격, 진짜 후기, 진짜 만족도 — 지금 전화로 확인하라.</p>
+                <a href="tel:01062790862">010-6279-0862</a>
+            </div>
+            <p>그래서 내가 추천하는 방법은 간단하다. 가양 유흥 가격비교를 할 때는 세 가지만 기억해라. 첫째, 기본 가격만 보지 말고 추가 비용까지 계산해라. 둘째, 후기를 확인해라. 형식적인 후기는 걸러라. 진짜 후기는 디테일이 살아 있다. "안주가 맛있다"가 아니라 "안주에 소스가 특별하다" 같은 거. 셋째, 직접 전화해라. 전화 한 통이면 가격, 서비스, 분위기 — 모든 걸 알 수 있다. 그리고 그 전화번호는 010-6279-0862. 여기서 진짜 정보를 준다.</p>
+            <p>마지막으로, 너에게 한 마디 한다. 가양에서 유흥을 즐기려면 정보가 무기다. 정보 없이 들어가면 호구가 된다. 정보를 가지고 들어가면 네가 주인공이다. 가양 유흥 가격비교, 이제 시작이다. 진짜 가격을 알고 싶으면, 진짜 후기를 보고 싶으면, 진짜 만족도를 느끼고 싶으면 — 지금 당장 행동해라. 전화 한 통이 너의 밤을 바꾼다.</p>
+            <ul>
+                <li>가양 가라오케: 기본 15만 원~25만 원, 추가 비용 5만 원~10만 원</li>
+                <li>가양 룸싸롱: 기본 30만 원~50만 원, 추가 비용 10만 원~20만 원</li>
+                <li>가양 유흥주점: 기본 20만 원~40만 원, 추가 비용 5만 원~15만 원</li>
+                <li>진짜 후기 확인: 010-6279-0862 로 전화</li>
+            </ul>
+            <p>이 글이 너에게 도움이 됐다면, 주변에도 공유해라. 가양에서 호구가 되는 놈은 더 이상 없어야 한다. 우리는 진짜를 원한다. 가양 유흥 가격비교, 이게 끝이 아니다. 더 많은 정보는 전화로.</p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 가양 유흥 가격비교 | 진짜 정보는 여기 있다 | 010-6279-0862</p>
+    </footer
+</body>
+</html>
