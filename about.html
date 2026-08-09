@@ -1,349 +1,347 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>가양 유흥 가격비교 | 정보 - 리얼한 밤문화의 기준</title>
-    <meta name="description" content="가양 유흥 가격비교, 형식적인 리뷰는 가라. 진짜 가격, 진짜 후기, 진짜 만족도. 가양에서 가장 솔직한 유흥 정보를 지금 확인하세요. 010-6279-0862">
-    <meta name="keywords" content="가양 유흥, 가양 유흥 가격비교, 가양 밤문화, 가양 업소, 가양 술집, 가양 가라오케, 가양 룸싸롱, 가양 유흥주점, 가양 유흥 정보">
-    <link rel="canonical" href="https://gayang-song-room.program-school.online/about.html">
-    <meta property="og:title" content="가양 유흥 가격비교 | 정보 - 리얼한 밤문화의 기준">
-    <meta property="og:description" content="가양 유흥 가격비교, 형식적인 리뷰는 가라. 진짜 가격, 진짜 후기, 진짜 만족도. 가양에서 가장 솔직한 유흥 정보를 지금 확인하세요. 010-6279-0862">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Courier New', monospace;
-            background: #1a1a1a;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-        header {
-            background: #0d0d0d;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 3px solid #ff4500;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            font-size: 1.5rem;
-            color: #ff4500;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 900;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            color: #e0e0e0;
-            text-decoration: none;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #ff4500;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background: #e0e0e0;
-            margin: 3px 0;
-        }
-        .hero {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            padding: 4rem 2rem;
-            text-align: center;
-            border-bottom: 3px solid #ff4500;
-            position: relative;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,69,0,0.05) 20px, rgba(255,69,0,0.05) 40px);
-            pointer-events: none;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        .hero-content h2 {
-            font-size: 3rem;
-            color: #ff4500;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 1rem;
-            font-weight: 900;
-        }
-        .hero-content p {
-            font-size: 1.2rem;
-            color: #ccc;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-        .hero-cta {
-            display: inline-block;
-            background: #ff4500;
-            color: #0d0d0d;
-            padding: 0.8rem 2rem;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: all 0.3s;
-            border: 2px solid #ff4500;
-        }
-        .hero-cta:hover {
-            background: transparent;
-            color: #ff4500;
-        }
-        .content-section {
-            padding: 3rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .content-card {
-            background: #222;
-            padding: 2rem;
-            border: 2px solid #333;
-            transition: all 0.3s;
-        }
-        .content-card:hover {
-            border-color: #ff4500;
-            transform: translateY(-5px);
-        }
-        .content-card h3 {
-            color: #ff4500;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        .content-card p {
-            color: #bbb;
-            margin-bottom: 1rem;
-        }
-        .content-card .price-tag {
-            display: inline-block;
-            background: #ff4500;
-            color: #0d0d0d;
-            padding: 0.3rem 1rem;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-        .faq-section {
-            padding: 3rem 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid #333;
-            padding-bottom: 1rem;
-        }
-        .faq-item h4 {
-            color: #ff4500;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-        .faq-item p {
-            color: #aaa;
-        }
-        .info-highlight {
-            background: #1a1a1a;
-            padding: 2rem;
-            border-left: 5px solid #ff4500;
-            margin: 2rem 0;
-        }
-        .info-highlight h3 {
-            color: #ff4500;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        .info-highlight ul {
-            list-style: none;
-            padding: 0;
-        }
-        .info-highlight ul li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #333;
-            color: #ccc;
-        }
-        .info-highlight ul li:last-child {
-            border-bottom: none;
-        }
-        .contact-block {
-            background: #222;
-            padding: 2rem;
-            text-align: center;
-            border: 2px solid #ff4500;
-            margin: 2rem auto;
-            max-width: 500px;
-        }
-        .contact-block .tel-link {
-            color: #ff4500;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-            display: block;
-            margin-top: 1rem;
-        }
-        .contact-block .tel-link:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            header {
-                padding: 1rem;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: #0d0d0d;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                padding: 1rem;
-                gap: 1rem;
-                border-bottom: 3px solid #ff4500;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .hero-content h2 {
-                font-size: 2rem;
-            }
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>가양 유흥 가격비교 | 정보 - 리얼한 밤문화의 기준</title>
+ <meta name="description" content="가양 유흥 가격비교, 형식적인 리뷰는 가라. 진짜 가격, 진짜 후기, 진짜 만족도. 가양에서 가장 솔직한 유흥 정보를 지금 확인하세요. 010-6279-0862">
+ <meta name="keywords" content="가양 유흥, 가양 유흥 가격비교, 가양 밤문화, 가양 업소, 가양 술집, 가양 가라오케, 가양 룸싸롱, 가양 유흥주점, 가양 유흥 정보">
+ <link rel="canonical" href="https://gayang-song-room.program-school.online/about.html">
+ <meta property="og:title" content="가양 유흥 가격비교 | 정보 - 리얼한 밤문화의 기준">
+ <meta property="og:description" content="가양 유흥 가격비교, 형식적인 리뷰는 가라. 진짜 가격, 진짜 후기, 진짜 만족도. 가양에서 가장 솔직한 유흥 정보를 지금 확인하세요. 010-6279-0862">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Courier New', monospace;
+ background: #1a1a1a;
+ color: #e0e0e0;
+ line-height: 1.6;
+ }
+ header {
+ background: #0d0d0d;
+ padding: 1rem 2rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 3px solid #ff4500;
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+ header h1 {
+ font-size: 1.5rem;
+ color: #ff4500;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-weight: 900;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+ .nav-links a {
+ color: #e0e0e0;
+ text-decoration: none;
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ font-weight: bold;
+ transition: color 0.3s;
+ }
+ .nav-links a:hover {
+ color: #ff4500;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ }
+ .hamburger span {
+ width: 25px;
+ height: 3px;
+ background: #e0e0e0;
+ margin: 3px 0;
+ }
+ .hero {
+ background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+ padding: 4rem 2rem;
+ text-align: center;
+ border-bottom: 3px solid #ff4500;
+ position: relative;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,69,0,0.05) 20px, rgba(255,69,0,0.05) 40px);
+ pointer-events: none;
+ }
+ .hero-content {
+ position: relative;
+ z-index: 1;
+ }
+ .hero-content h2 {
+ font-size: 3rem;
+ color: #ff4500;
+ text-transform: uppercase;
+ letter-spacing: 4px;
+ margin-bottom: 1rem;
+ font-weight: 900;
+ }
+ .hero-content p {
+ font-size: 1.2rem;
+ color: #ccc;
+ max-width: 600px;
+ margin: 0 auto 2rem;
+ }
+ .hero-cta {
+ display: inline-block;
+ background: #ff4500;
+ color: #0d0d0d;
+ padding: 0.8rem 2rem;
+ text-decoration: none;
+ font-weight: bold;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ transition: all 0.3s;
+ border: 2px solid #ff4500;
+ }
+ .hero-cta:hover {
+ background: transparent;
+ color: #ff4500;
+ }
+ .content-section {
+ padding: 3rem 2rem;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ .content-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 2rem;
+ margin-top: 2rem;
+ }
+ .content-card {
+ background: #222;
+ padding: 2rem;
+ border: 2px solid #333;
+ transition: all 0.3s;
+ }
+ .content-card:hover {
+ border-color: #ff4500;
+ transform: translateY(-5px);
+ }
+ .content-card h3 {
+ color: #ff4500;
+ font-size: 1.3rem;
+ margin-bottom: 1rem;
+ text-transform: uppercase;
+ }
+ .content-card p {
+ color: #bbb;
+ margin-bottom: 1rem;
+ }
+ .content-card .price-tag {
+ display: inline-block;
+ background: #ff4500;
+ color: #0d0d0d;
+ padding: 0.3rem 1rem;
+ font-weight: bold;
+ font-size: 0.9rem;
+ }
+ .faq-section {
+ padding: 3rem 2rem;
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ .faq-item {
+ margin-bottom: 1.5rem;
+ border-bottom: 1px solid #333;
+ padding-bottom: 1rem;
+ }
+ .faq-item h4 {
+ color: #ff4500;
+ font-size: 1.1rem;
+ margin-bottom: 0.5rem;
+ cursor: pointer;
+ }
+ .faq-item p {
+ color: #aaa;
+ }
+ .info-highlight {
+ background: #1a1a1a;
+ padding: 2rem;
+ border-left: 5px solid #ff4500;
+ margin: 2rem 0;
+ }
+ .info-highlight h3 {
+ color: #ff4500;
+ font-size: 1.2rem;
+ margin-bottom: 1rem;
+ }
+ .info-highlight ul {
+ list-style: none;
+ padding: 0;
+ }
+ .info-highlight ul li {
+ padding: 0.5rem 0;
+ border-bottom: 1px solid #333;
+ color: #ccc;
+ }
+ .info-highlight ul li:last-child {
+ border-bottom: none;
+ }
+ .contact-block {
+ background: #222;
+ padding: 2rem;
+ text-align: center;
+ border: 2px solid #ff4500;
+ margin: 2rem auto;
+ max-width: 500px;
+ }
+ .contact-block .tel-link {
+ color: #ff4500;
+ font-size: 1.5rem;
+ font-weight: bold;
+ text-decoration: none;
+ display: block;
+ margin-top: 1rem;
+ }
+ .contact-block .tel-link:hover {
+ text-decoration: underline;
+ }
+ @media (max-width: 768px) {
+ header {
+ padding: 1rem;
+ }
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ background: #0d0d0d;
+ position: absolute;
+ top: 60px;
+ left: 0;
+ width: 100%;
+ padding: 1rem;
+ gap: 1rem;
+ border-bottom: 3px solid #ff4500;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .hero-content h2 {
+ font-size: 2rem;
+ }
+ .content-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://gayang-song-room.program-school.online/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <h1>가양 유흥 가격비교</h1>
-        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="/info">정보</a></li>
-            <li><a href="/review">리뷰</a></li>
-            <li><a href="/price">가격</a></li>
-            <li><a href="/contact">문의</a></li>
-        </ul>
-    </header>
+ <header>
+ <h1>가양 유흥 가격비교</h1>
+ <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/review">리뷰</a></li>
+ <li><a href="/price">가격</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>가양 유흥 정보</h2>
-            <p>가짜 리뷰, 과장된 광고는 집어치워. 여기는 진짜 가양 유흥의 모든 정보를 훤히 까발리는 곳이다.</p>
-            <a href="tel:010-6279-0862" class="hero-cta">지금 전화: 010-6279-0862</a>
-        </div>
-    </section>
+ <section class="hero">
+ <div class="hero-content">
+ <h2>가양 유흥 정보</h2>
+ <p>가짜 리뷰, 과장된 광고는 집어치워. 여기는 진짜 가양 유흥의 모든 정보를 훤히 까발리는 곳이다.</p>
+ <a href="tel:010-6279-0862" class="hero-cta">지금 전화: 010-6279-0862</a>
+ </div>
+ </section>
 
-    <section class="content-section">
-        <div class="info-highlight">
-            <h3>🔥 가양 유흥, 이게 진짜야</h3>
-            <ul>
-                <li>💥 가격: 룸싸롱 20만원~50만원 (업소별 상이, 호구 잡히지 마라)</li>
-                <li>💥 위치: 가양역 5분 거리, 골목 안쪽까지 다 파헤쳤다</li>
-                <li>💥 분위기: 하드한 곳부터 프라이빗한 곳까지, 니 취향대로 골라</li>
-                <li>💥 서비스: 기본은 한다, 하지만 추가 옵션은 협상 필수</li>
-            </ul>
-        </div>
+ <section class="content-section">
+ <div class="info-highlight">
+ <h3>🔥 가양 유흥, 이게 진짜야</h3>
+ <ul>
+ <li>💥 가격: 룸싸롱 20만원~50만원 (업소별 상이, 호구 잡히지 마라)</li>
+ <li>💥 위치: 가양역 5분 거리, 골목 안쪽까지 다 파헤쳤다</li>
+ <li>💥 분위기: 하드한 곳부터 프라이빗한 곳까지, 니 취향대로 골라</li>
+ <li>💥 서비스: 기본은 한다, 하지만 추가 옵션은 협상 필수</li>
+ </ul>
+ </div>
 
-        <div class="content-grid">
-            <div class="content-card">
-                <h3>가양 룸싸롱 정보</h3>
-                <p>가양에서 가장 핫한 룸싸롱들. 가격은 30만원부터 시작하지만, 니가 얼마나 쓰느냐에 따라 천국과 지옥이 갈린다. <strong>가양 유흥 가격비교</strong>의 정석.</p>
-                <span class="price-tag">30만원~</span>
-            </div>
-            <div class="content-card">
-                <h3>가양 가라오케 정보</h3>
-                <p>노래방? 여기는 그냥 노래방이 아니다. 2차로 이어지는 코스, 아가씨들의 서비스, 그리고 가격. 다 알려준다. <strong>가양 유흥</strong>의 진짜 얼굴.</p>
-                <span class="price-tag">20만원~</span>
-            </div>
-            <div class="content-card">
-                <h3>가양 유흥주점 정보</h3>
-                <p>술 한잔에 분위기까지? 가양 유흥주점은 선택지가 넓다. 하지만 가격 대비 만족도는 니가 직접 비교해야 한다. <strong>가양 유흥 가격비교</strong>는 선택이 아닌 필수.</p>
-                <span class="price-tag">25만원~</span>
-            </div>
-        </div>
-    </section>
+ <div class="content-grid">
+ <div class="content-card">
+ <h3>가양 룸싸롱 정보</h3>
+ <p>가양에서 가장 핫한 룸싸롱들. 가격은 30만원부터 시작하지만, 니가 얼마나 쓰느냐에 따라 천국과 지옥이 갈린다. <strong>가양 유흥 가격비교</strong>의 정석.</p>
+ <span class="price-tag">30만원~</span>
+ </div>
+ <div class="content-card">
+ <h3>가양 가라오케 정보</h3>
+ <p>노래방? 여기는 그냥 노래방이 아니다. 2차로 이어지는 코스, 아가씨들의 서비스, 그리고 가격. 다 알려준다. <strong>가양 유흥</strong>의 진짜 얼굴.</p>
+ <span class="price-tag">20만원~</span>
+ </div>
+ <div class="content-card">
+ <h3>가양 유흥주점 정보</h3>
+ <p>술 한잔에 분위기까지? 가양 유흥주점은 선택지가 넓다. 하지만 가격 대비 만족도는 니가 직접 비교해야 한다. <strong>가양 유흥 가격비교</strong>는 선택이 아닌 필수.</p>
+ <span class="price-tag">25만원~</span>
+ </div>
+ </div>
+ </section>
 
-    <section class="faq-section">
-        <h2 style="color: #ff4500; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2rem; text-align: center;">가양 유흥 정보 FAQ</h2>
-        <div class="faq-item">
-            <h4>Q: 가양 유흥 가격비교, 진짜 믿을 수 있나?</h4>
-            <p>A: 우리는 가짜 후기나 광고로 먹고사는 놈들이 아니다. 직접 발로 뛰고, 직접 경험한 가격과 정보만 털어놓는다. 의심되면 직접 가봐라.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Q: 가양에서 가장 비싼 업소는?</h4>
-            <p>A: 50만원 넘어가는 곳도 있다. 하지만 돈값을 하느냐? 그건 니가 판단할 문제다. 우리는 있는 그대로의 정보만 제공한다.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Q: 가양 유흥 정보, 어떻게 업데이트되나?</h4>
-            <p>A: 매주 업데이트다. 가격 변동, 업소 오픈/클로즈, 서비스 변화. 우리는 놓치지 않는다. <strong>가양 유흥 가격비교</strong>의 최신 버전을 원한다면 계속 지켜봐라.</p>
-        </div>
-        <div class="faq-item">
-            <h4>Q: 전화 문의해도 되나?</h4>
-            <p>A: 010-6279-0862. 직접 전화해서 물어봐라. 우리는 숨기는 거 없다. 단, 예의 없는 놈들은 블랙리스트다.</p>
-        </div>
-    </section>
+ <section class="faq-section">
+ <h2 style="color: #ff4500; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2rem; text-align: center;">가양 유흥 정보 FAQ</h2>
+ <div class="faq-item">
+ <h4>Q: 가양 유흥 가격비교, 진짜 믿을 수 있나?</h4>
+ <p>A: 우리는 가짜 후기나 광고로 먹고사는 놈들이 아니다. 직접 발로 뛰고, 직접 경험한 가격과 정보만 털어놓는다. 의심되면 직접 가봐라.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 가양에서 가장 비싼 업소는?</h4>
+ <p>A: 50만원 넘어가는 곳도 있다. 하지만 돈값을 하느냐? 그건 니가 판단할 문제다. 우리는 있는 그대로의 정보만 제공한다.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 가양 유흥 정보, 어떻게 업데이트되나?</h4>
+ <p>A: 매주 업데이트다. 가격 변동, 업소 오픈/클로즈, 서비스 변화. 우리는 놓치지 않는다. <strong>가양 유흥 가격비교</strong>의 최신 버전을 원한다면 계속 지켜봐라.</p>
+ </div>
+ <div class="faq-item">
+ <h4>Q: 전화 문의해도 되나?</h4>
+ <p>A: 010-6279-0862. 직접 전화해서 물어봐라. 우리는 숨기는 거 없다. 단, 예의 없는 놈들은 블랙리스트다.</p>
+ </div>
+ </section>
 
-    <div class="contact-block">
-        <h3 style="color: #ff4500; text-transform: uppercase;">📞 상담 및 문의</h3>
-        <p style="color: #ccc; margin: 1rem 0;">가양 유흥, 더 이상 헤매지 마라. 진짜 정보가 필요하면 전화해.</p>
-        <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
-    </div>
+ <div class="contact-block">
+ <h3 style="color: #ff4500; text-transform: uppercase;">📞 상담 및 문의</h3>
+ <p style="color: #ccc; margin: 1rem 0;">가양 유흥, 더 이상 헤매지 마라. 진짜 정보가 필요하면 전화해.</p>
+ <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+ </div>
 
-    <footer style="background: #0d0d0d; padding: 2rem; text-align: center; border-top: 3px solid #ff4500; margin-top: 2rem;">
-        <p style="color: #666; font-size: 0.8rem;">© 2025 가양 유흥 가격비교. 모든 정보는 실제 경험 기반. 불법 복제 금지.</p>
-        <p style="color: #666; font-size: 0.8rem;">주소: 서울특별시 강서구 가양동 | 전화: 010-6279-0862</p>
-    </footer>
+ <footer style="background: #0d0d0d; padding: 2rem; text-align: center; border-top: 3px solid #ff4500; margin-top: 2rem;">
+ <p style="color: #666; font-size: 0.8rem;">© 2025 가양 유흥 가격비교. 모든 정보는 실제 경험 기반. 불법 복제 금지.</p>
+ <p style="color: #666; font-size: 0.8rem;">주소: 서울특별시 강서구 가양동 | 전화: 010-6279-0862</p>
+ </footer>
 
-    <script>
-        // 햄버거 메뉴 토글
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+ <script>
+ // 햄버거 메뉴 토글
+ document.querySelector('.hamburger').addEventListener('click', function() {
+ document.querySelector('.nav-links').classList.toggle('active');
+ });
+ </script>
 </body>
 </html>
